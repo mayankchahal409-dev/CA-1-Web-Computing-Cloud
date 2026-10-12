@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Book Exchange | Browse Books</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">📚</span> Campus Book Exchange
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <p class="eyebrow">FIND YOUR NEXT READ</p>
+      <h1>Browse the bookshelf.</h1>
+      <p>
+        Explore books shared by students on campus.
+        Found something interesting? Send a request.
+      </p>
+    </section>
+
+    <section class="search-panel">
+      <div>
+        <h2>Looking for a title?</h2>
+        <p class="muted">Type a book name to display it below.</p>
+      </div>
+
+      <div class="search-controls">
+        <label class="sr-only" for="bookTitleSearch">Book title</label>
+        <input id="bookTitleSearch" type="text" placeholder="e.g. The Alchemist">
+        <button class="button primary" id="showBookBtn" type="button">
+          Show Book
+        </button>
+      </div>
+
+      <p class="notice full-width" id="searchMessage" role="status"></p>
+      <div class="search-result full-width" id="shownBook" hidden></div>
+    </section>
+
+    <div class="section-heading listing-heading">
+      <div>
+        <p class="eyebrow">STUDENT LISTINGS</p>
+        <h2>Available books</h2>
+        <p>Request a book you would like to borrow or exchange.</p>
+      </div>
+    </div>
+
+    <section class="book-grid browse-grid">
+      <article class="book-card browse-card">
+        <div class="cover cover-blue">
+          <span>THE<br>ALGORITHM<br>NOTEBOOK</span>
+          <small>COMPUTER SCIENCE</small>
+        </div>
+        <div class="card-content">
+          <span class="tag">Technology</span>
+          <h3>Introduction to Algorithms</h3>
+          <p class="muted">Author: Thomas H. Cormen</p>
+          <p class="condition">Condition: Good</p>
+          <button class="button primary request-btn" type="button">
+            Mark as Requested
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card browse-card">
+        <div class="cover cover-peach">
+          <span>THE<br>WORLD OF<br>WONDERS</span>
+          <small>SCIENCE &amp; NATURE</small>
+        </div>
+        <div class="card-content">
+          <span class="tag">Science</span>
+          <h3>A Brief History of Time</h3>
+          <p class="muted">Author: Stephen Hawking</p>
+          <p class="condition">Condition: Fair</p>
+          <button class="button primary request-btn" type="button">
+            Mark as Requested
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card browse-card">
+        <div class="cover cover-green">
+          <span>GROW<br>YOUR<br>IMAGINATION</span>
+          <small>CREATIVE WRITING</small>
+        </div>
+        <div class="card-content">
+          <span class="tag">Literature</span>
+          <h3>The Alchemist</h3>
+          <p class="muted">Author: Paulo Coelho</p>
+          <p class="condition">Condition: Good</p>
+          <button class="button primary request-btn" type="button">
+            Mark as Requested
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card browse-card">
+        <div class="cover cover-lilac">
+          <span>THINK<br>BETTER<br>EVERY DAY</span>
+          <small>PERSONAL GROWTH</small>
+        </div>
+        <div class="card-content">
+          <span class="tag">Self-help</span>
+          <h3>Atomic Habits</h3>
+          <p class="muted">Author: James Clear</p>
+          <p class="condition">Condition: Like new</p>
+          <button class="button primary request-btn" type="button">
+            Mark as Requested
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <p class="notice" id="browseMessage" role="status"></p>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Campus Book Exchange</span>
+      <span>Made for students, by students.</span>
+    </div>
+  </footer>
+</body>
+</html>

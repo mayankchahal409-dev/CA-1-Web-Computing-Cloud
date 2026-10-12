@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Book Exchange | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">📚</span> Campus Book Exchange
+      </a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">READ • SHARE • REPEAT</p>
+        <h1 id="mainHeading">Good books deserve a second chapter.</h1>
+        <p class="hero-description">
+          Exchange books with fellow students, discover your next great read,
+          and give your old books a new home.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="books.html">Explore books →</a>
+          <a class="button secondary" href="list-book.html">Share a book</a>
+        </div>
+        <button class="text-button" id="changeHeadingBtn" type="button">
+          Change welcome heading
+        </button>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-sun"></div>
+        <div class="book-stack">
+          <div class="book book-one"><span>THE ART OF LEARNING</span></div>
+          <div class="book book-two"><span>IDEAS &amp; STORIES</span></div>
+          <div class="book book-three"><span>EXPLORE MORE</span></div>
+        </div>
+        <div class="art-note">Your next favourite<br>book is waiting ✨</div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div><strong>Share</strong><span>knowledge with others</span></div>
+        <div><strong>Save</strong><span>money on textbooks</span></div>
+        <div><strong>Reuse</strong><span>books and reduce waste</span></div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A LITTLE INSPIRATION</p>
+          <h2>Featured books</h2>
+          <p>Some picks from your campus community.</p>
+        </div>
+        <button class="button secondary small" id="toggleFeaturedBtn" type="button">
+          Hide featured books
+        </button>
+      </div>
+
+      <div class="book-grid" id="featuredBooks">
+        <article class="book-card featured-card">
+          <div class="cover cover-blue">
+            <span>THE<br>ALGORITHM<br>NOTEBOOK</span>
+            <small>COMPUTER SCIENCE</small>
+          </div>
+          <div class="card-content">
+            <span class="tag">Technology</span>
+            <h3>Introduction to Algorithms</h3>
+            <p class="muted">Thomas H. Cormen</p>
+            <button class="button outline change-card-btn" type="button">
+              Change card colour
+            </button>
+          </div>
+        </article>
+
+        <article class="book-card featured-card">
+          <div class="cover cover-peach">
+            <span>THE<br>WORLD OF<br>WONDERS</span>
+            <small>SCIENCE &amp; NATURE</small>
+          </div>
+          <div class="card-content">
+            <span class="tag">Science</span>
+            <h3>A Brief History of Time</h3>
+            <p class="muted">Stephen Hawking</p>
+            <a class="card-link" href="books.html">View listing →</a>
+          </div>
+        </article>
+
+        <article class="book-card featured-card">
+          <div class="cover cover-green">
+            <span>GROW<br>YOUR<br>IMAGINATION</span>
+            <small>CREATIVE WRITING</small>
+          </div>
+          <div class="card-content">
+            <span class="tag">Literature</span>
+            <h3>The Alchemist</h3>
+            <p class="muted">Paulo Coelho</p>
+            <a class="card-link" href="books.html">View listing →</a>
+          </div>
+        </article>
+      </div>
+      <p class="notice" id="homeMessage" role="status"></p>
+    </section>
+
+    <section class="cta container">
+      <div>
+        <p class="eyebrow">HAVE A BOOK TO SHARE?</p>
+        <h2>Pass a good story forward.</h2>
+        <p>List a book in just a few simple steps.</p>
+      </
